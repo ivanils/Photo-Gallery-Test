@@ -61,7 +61,7 @@ const App = () => {
       <GlobalStyles />
       <Lightbox className={(activo == true)? 'activo' : ''}>
         <Cerrar onClick={()=>{cerrar()}}>
-          <Svg className="cerrar" src="public/svg/close.svg"></Svg>
+          <Svg className="cerrar" src="/svg/close.svg"></Svg>
         </Cerrar>
       {(listaLightbox.length !== 0) ? <ImgLightbox src={listaLightbox[posicion].url}></ImgLightbox> : ''}
       </Lightbox>
@@ -81,10 +81,10 @@ const App = () => {
       </Wrapper>
         <Flechas>
           <Button onClick={()=>{disminuirMoverSlide()}}>
-            <Svg src="public/svg/flechas/izq.svg"></Svg>
+            <Svg src="/svg/flechas/izq.svg"></Svg>
           </Button>
           <Button onClick={()=>{aumentarMoverSlide()}}>
-            <Svg className="derecha" src="public/svg/flechas/drc.svg"></Svg>
+            <Svg className="derecha" src="/svg/flechas/drc.svg"></Svg>
           </Button>
         </Flechas>
     </Main>
